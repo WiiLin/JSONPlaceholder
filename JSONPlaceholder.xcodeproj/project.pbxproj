@@ -19,6 +19,8 @@
 		28FBDB90255284150061E2E4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 28FBDB8F255284150061E2E4 /* RxCocoa */; };
 		28FBDB92255284150061E2E4 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 28FBDB91255284150061E2E4 /* RxBlocking */; };
 		28FBDB96255284B10061E2E4 /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 28FBDB95255284B10061E2E4 /* RxAlamofire */; };
+		28FBDB99255284FA0061E2E4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBDB98255284FA0061E2E4 /* APIManager.swift */; };
+		28FBDB9C255287330061E2E4 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FBDB9B255287330061E2E4 /* Album.swift */; };
 		F519ADC22C1F671A447D4AC5 /* Pods_JSONPlaceholder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F9428C9793A22E1AAD496F /* Pods_JSONPlaceholder.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		28FBDB4E255276EB0061E2E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28FBDB51255276EB0061E2E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28FBDB53255276EB0061E2E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FBDB98255284FA0061E2E4 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		28FBDB9B255287330061E2E4 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		A0F9428C9793A22E1AAD496F /* Pods_JSONPlaceholder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONPlaceholder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,7 @@
 		28FBDB44255276EA0061E2E4 /* JSONPlaceholder */ = {
 			isa = PBXGroup;
 			children = (
+				28FBDB9F25528A110061E2E4 /* Model */,
 				28FBDB45255276EA0061E2E4 /* AppDelegate.swift */,
 				28FBDB47255276EA0061E2E4 /* SceneDelegate.swift */,
 				28FBDB49255276EA0061E2E4 /* ViewController.swift */,
@@ -84,6 +89,31 @@
 				28FBDB53255276EB0061E2E4 /* Info.plist */,
 			);
 			path = JSONPlaceholder;
+			sourceTree = "<group>";
+		};
+		28FBDB9E255289FE0061E2E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				28FBDB98255284FA0061E2E4 /* APIManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		28FBDB9F25528A110061E2E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28FBDBA025528A210061E2E4 /* APIModel */,
+				28FBDB9E255289FE0061E2E4 /* Utils */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28FBDBA025528A210061E2E4 /* APIModel */ = {
+			isa = PBXGroup;
+			children = (
+				28FBDB9B255287330061E2E4 /* Album.swift */,
+			);
+			path = APIModel;
 			sourceTree = "<group>";
 		};
 		C0312D70504F6461DF6EA185 /* Pods */ = {
@@ -212,9 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FBDB99255284FA0061E2E4 /* APIManager.swift in Sources */,
 				28FBDB4A255276EA0061E2E4 /* ViewController.swift in Sources */,
 				28FBDB46255276EA0061E2E4 /* AppDelegate.swift in Sources */,
 				28FBDB48255276EA0061E2E4 /* SceneDelegate.swift in Sources */,
+				28FBDB9C255287330061E2E4 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
